@@ -4,7 +4,7 @@ namespace App\View\Components\headers;
 
 use Illuminate\View\Component;
 
-class index extends Component
+class Headder extends Component
 {
 
     public $nav = array(
@@ -13,16 +13,17 @@ class index extends Component
         array("name" => "Features", "href" => "/features"),
         array("name" => "Blog", "href" => "/blog")
         );
-
+    
 
     /**
      * Create a new component instance.
+     * 
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($nav)
     {
-        
+        $this->nav = $nav;
     }
 
     /**
@@ -32,7 +33,6 @@ class index extends Component
      */
     public function render()
     {
-
-        return view('components.headers.index', ["nav" => $this->nav]);
+        return view('components.headers.index');
     }
 }

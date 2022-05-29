@@ -2073,7 +2073,8 @@ var getAll = function getAll() {
 };
 
 var state = {
-  drawerIsOpen: false
+  drawerIsOpen: false,
+  videoIsOpen: false
 };
 /** @type {HTMLButtonElement} */
 
@@ -2081,7 +2082,16 @@ var DRAWER_BUTTON = getOne("#drawer-btn");
 /** @type {HTMLButtonElement} */
 
 var DRAWER_BUTTON_CLOSE = getOne("#drawer-btn-close");
+/**@type {HTMLDivElement} */
+
+var VIDEO = getOne("#video");
+/**@type {HTMLButtonElement} */
+
+var VIDEO_BUTTON = getOne("#show-video");
 var DRAWER = getOne("#drawer");
+/**@type {HTMLIFrameElement} */
+
+var iframe = getOne("#iframe");
 
 var handleDrawer = function handleDrawer() {
   state.drawerIsOpen = !state.drawerIsOpen;
@@ -2093,8 +2103,27 @@ var handleDrawer = function handleDrawer() {
   }
 };
 
-DRAWER_BUTTON.addEventListener("click", handleDrawer);
-DRAWER_BUTTON_CLOSE.addEventListener("click", handleDrawer);
+var handleVideo = function handleVideo() {
+  if (!state.videoIsOpen) {
+    document.documentElement.classList.toggle("overflow-y-hidden");
+  }
+
+  if (!state.videoIsOpen && iframe.src) {
+    var src = iframe.src;
+    iframe.src = src;
+  }
+
+  VIDEO.classList.toggle("hidden");
+  VIDEO.classList.toggle("flex");
+  setTimeout(function () {
+    VIDEO.classList.toggle("scale-0");
+  }, 200);
+};
+
+DRAWER_BUTTON === null || DRAWER_BUTTON === void 0 ? void 0 : DRAWER_BUTTON.addEventListener("click", handleDrawer);
+DRAWER_BUTTON_CLOSE === null || DRAWER_BUTTON_CLOSE === void 0 ? void 0 : DRAWER_BUTTON_CLOSE.addEventListener("click", handleDrawer);
+VIDEO_BUTTON === null || VIDEO_BUTTON === void 0 ? void 0 : VIDEO_BUTTON.addEventListener("click", handleVideo);
+VIDEO.addEventListener("click", handleVideo);
 
 /***/ }),
 

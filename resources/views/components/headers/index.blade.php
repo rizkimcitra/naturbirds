@@ -5,9 +5,7 @@
 			<x-logo />
 		</div>
 
-
-		{{ json_encode($nav) }}
-		{{-- <x-headers.nav :nav="$nav" /> --}}
+		<x-headers.nav :nav="$nav" />
 
 		<button id="drawer-btn"
 			class="inline-flex items-center justify-center lg:hidden text-lg p-2 rounded bg-green-600 hover:bg-green-500">

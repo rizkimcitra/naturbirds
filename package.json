@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "concurrently \"npm run watch\" \"php artisan serve\" --kill-others",
+        "dev": "concurrently \"php artisan serve\" \"npm run watch\" --kill-others",
         "development": "mix",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",

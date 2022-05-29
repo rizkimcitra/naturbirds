@@ -1,5 +1,5 @@
 <aside id="drawer"
-	class="fixed right-0 lg:hidden inset-y-0 w-1/2 transition-all duration-300 bg-gray-900 translate-x-96 opacity-0">
+	class="fixed right-0 lg:hidden inset-y-0 w-1/2 transition-all duration-300 z-30 bg-gray-900 translate-x-96 opacity-0">
 	<div class="flex flex-col gap-4 w-full h-full py-4">
 		<section class="flex items-center justify-between w-full px-6 sm:px-8 py-4">
 			<button id="drawer-btn-close"

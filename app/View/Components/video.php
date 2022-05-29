@@ -4,20 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class layouts extends Component
+class video extends Component
 {
-
-    public $title;
-    public $nav;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title, $nav)
+    public function __construct()
     {
-        $this->title = $title;
-        $this->nav = $nav;
+        //
     }
 
     /**
@@ -27,6 +23,6 @@ class layouts extends Component
      */
     public function render()
     {
-        return view('components.layouts');
+        return view('components.video');
     }
 }
