@@ -12,7 +12,7 @@
 				</div>
 
 				<div class="flex flex-col lg:flex-row items-center gap-4 rounded-xl overflow-hidden bg-green-300">
-					<div class="w-full px-4 lg:px-6">
+					<div class="w-full py-4 px-4 lg:px-6">
 						<h2 class="text-lg lg:text-2xl font-semibold mb-4 text-gray-800">
 							{{ $card_title }}
 						</h2>
@@ -22,7 +22,7 @@
 						<a href="/blog/{{ $card_title }}" class="font-medium text-green-700">Read More</a>
 					</div>
 
-					<figure class="w-11/12 h-full aspect-square">
+					<figure class="w-full lg:w-11/12 h-full aspect-square">
 						<img src="{{ $card_image }}" alt="{{ $card_title }}" class="w-full h-full rounded-xl aspect-square">
 					</figure>
 				</div>
@@ -30,7 +30,7 @@
 
 			<section class="w-full lg:h-screen py-[10%]">
 				<div
-					class="w-full h-full flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16 py-6 px-8 lg:py-4 lg:px-10 rounded-3xl bg-green-300">
+					class="w-full h-full flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16 p-6 lg:py-4 lg:px-8 rounded-3xl bg-green-300">
 					<figure class="relative w-1/2 lg:w-3/4 flex items-center justify-center">
 						<img src="{{ $app_image }}" alt="{{ $app_title }}" loading="lazy"
 							class="w-[30rem] scale-150 translate-x-[40%] lg:translate-x-0">
