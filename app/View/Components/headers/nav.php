@@ -8,6 +8,7 @@ class Nav extends Component
 {
 
     public $nav;
+    
     /**
      * Create a new component instance.
      *
@@ -15,6 +16,7 @@ class Nav extends Component
      */
     public function __construct($nav)
     {
+        
      $this->nav = $nav;
     }
 
