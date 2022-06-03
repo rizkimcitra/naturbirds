@@ -1,7 +1,7 @@
 <header class="w-full h-24">
 	<div class="layout flex items-center justify-between h-full">
 		<div class="flex items-center gap-3">
-			<p class="text-2xl font-semibold">Naturebirds</p>
+			<p class="text-2xl font-semibold">NaturBirds</p>
 			<x-logo />
 		</div>
 

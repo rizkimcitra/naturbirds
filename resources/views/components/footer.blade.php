@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<div class="flex items-center justify-between mr-[14%]">
+		<div class="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-0 mr-[14%]">
 			<div class="flex items-center gap-8">
 				@foreach ($logos as $item)
 					<button class="w-8 h-8 inline-flex itemms-center justify-center">

@@ -1,4 +1,4 @@
-<div class="lg:h-[calc(100vh-6rem)] flex flex-col justify-evenly lg:gap-4">
+<div class="lg:h-[calc(100vh-6rem)] flex flex-col justify-evenly gap-8 lg:gap-4 pb-16">
 	<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-0">
 		<section class="flex flex-col gap-4 w-full pr-4">
 			<p class="text-lg font-semibold uppercase text-gray-700">Welcome To NatureBirds</p>
